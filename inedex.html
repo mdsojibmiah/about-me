@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card with slidimg Feature</title>
+
+    <!--------Fontawesome CDN Link===========-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+
+     <!-- Link Swiper's CSS -->
+     <link rel="stylesheet"href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+
+    <!-------CSS Llink========-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<!-----======Section Start=========-->
+<section>
+<!----====Swjiper< Conrainer Start=====-->
+<div class="swiper mySwiper container">
+   <div class="swiper-wrapper conent">
+     <!-----=====Mohammad Sojib Miah About Start=======-->
+      <div class="swiper-slide card">
+        <div class="card-content">
+            <div class="image">
+                <img src="images/Profile.jpg" alt="">
+            </div>
+            <div class="media-icons">
+                <a target="_blank" href="https://www.facebook.com/sojib.hossen.104">
+                 <i id="facebook" class="fab fa-facebook"></i></a>
+                <a target="_blank" href="https://github.com/mdsojibmiah"><i id="github" class="fab fa-github-square"></i></a>
+               <a target="_blank" href="https://www.instagram.com/mohammadsojibmiah/"> <i id="instagram" class="fab fa-instagram"></i></a>
+            </div>
+            <div class="name-profession">
+                <span class="name">Mohammd Sojib Miah</span>
+                <span class="profession">Web Devoloper</span>
+            </div>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>                            
+            </div>
+            <div class="button">
+                <button class="aboutMe">About Me</button>
+                <button class="hireMe">Hire Me</button>
+            </div>           
+        </div>
+    </div>
+<!---======Mohammad Sojib Miah About end=========-->
+
+<!---======Md Emon Hasan About Start=========-->
+
+    <div class="swiper-slide card">
+        <div class="card-content">
+            <div class="image">
+                <img src="images/Emon.jpg" alt="">
+            </div>
+            <div class="media-icons">
+                <a target="_blank" href="https://www.facebook.com/iconic.emon">
+                 <i id="facebook" class="fab fa-facebook"></i></a>
+                <a target="_blank" href="#"><i id="github" class="fab fa-github-square"></i></a>
+               <a target="_blank" href="#"> <i id="instagram" class="fab fa-instagram"></i></a>
+            </div>
+            <div class="name-profession">
+                <span class="name">MD Emon Hasan</span>
+                <span class="profession">Web Devoloper</span>
+            </div>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>                            
+            </div>
+            <div class="button">
+                <button class="aboutMe">About Me</button>
+                <button class="hireMe">Hire Me</button>
+            </div>           
+        </div>
+    </div>
+<!---======Md Emon Hasan About End=========-->
+
+<!---======Kaies Mahmud Nehal About Start=========-->
+    <div class="swiper-slide card">
+        <div class="card-content">
+            <div class="image">
+                <img src="images/Kayes nehal.jpg" alt="">
+            </div>
+            <div class="media-icons">
+                <a target="_blank" href="https://www.facebook.com/kaiesmahmud.nehal">
+                 <i id="facebook" class="fab fa-facebook"></i></a>
+                <a target="_blank" href="#"><i id="github" class="fab fa-github-square"></i></a>
+               <a target="_blank" href="#"> <i id="instagram" class="fab fa-instagram"></i></a>
+            </div>
+            <div class="name-profession">
+                <span class="name">Kaies Mahmud Nehal</span>
+                <span class="profession">Web Devoloper</span>
+            </div>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <i class="far fa-star"></i>                            
+            </div>
+            <div class="button">
+                <button class="aboutMe">About Me</button>
+                <button class="hireMe">Hire Me</button>
+            </div>           
+        </div>
+    </div>
+<!---======Kaies Mahmud Nehal About End=========-->  
+ 
+   </div>
+ </div>
+<!----====Swjiper< Conrainer End=======-->
+
+ <!--=======Swiper Button All start==========-->
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+<!--=======Swiper Button All End==========-->
+
+</section>
+<!-----======Section End=========-->
+
+
+<!--=======Swiper JS Start======= -->
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 3,
+    spaceBetween: 30,
+    slidesPerGroup: 3,
+    loop: true,
+    loopFillGroupWithBlank: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+<!--=======Swiper JS End======= -->
+</body>
+</html>
